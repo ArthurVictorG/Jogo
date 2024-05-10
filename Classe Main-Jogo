@@ -1,0 +1,28 @@
+public class Jogo {
+  public static void main(String[] args) {
+Personagem superheroi = new SuperHeroi("superheroi", "Clark Kent");
+Personagem vilao = new Vilao("Lex Luthor", "Lex Luthor", 10);
+
+    //criar superpoderes
+    //Superpoder Poder1 = new Superpoder("Força", 10);
+    //Superpoder Poder2 = new Superpoder("Visão de Raios", 8);
+    //Superpoder Poder3 = new Superpoder("Super Sopro", 5);
+    //Superpoder Poder4 = new Superpoder("Invisibilidade", 4);
+
+    //adicionar superpoderes
+    superheroi.adicionaSuperpoder(4);
+    superheroi.adicionaSuperpoder(2);
+    superheroi.adicionaSuperpoder(5);
+    superheroi.adicionaSuperpoder(3);
+
+    vilao.adicionaSuperpoder(2);
+    vilao.adicionaSuperpoder(5);
+    vilao.adicionaSuperpoder(3);
+    vilao.adicionaSuperpoder(1);
+    
+  
+    Confronto confronto = new Confronto();
+    int resultado = confronto.executar(superheroi, vilao);
+    
+  }
+}
